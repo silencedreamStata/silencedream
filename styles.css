@@ -1,0 +1,187 @@
+html,body {
+    font-family: "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Ensure the body takes the full viewport height */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Minimum height of the body is full viewport height */
+}
+
+header {
+    background-color: #20232a;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1; /* Allows main content to expand and fill the available space */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #20232a;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li.dropdown:hover .dropbtn {
+    background-color: #61dafb;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+
+
+.sidebar {
+    width: 300px;
+    padding: 10px;
+    background: linear-gradient(to bottom, #333, #555);
+    color: white;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    /* Custom scrollbar styles */
+    scrollbar-width: thin;
+    scrollbar-color: #61dafb #555;  /* thumb and track */
+}
+
+/* WebKit browsers like Chrome, Edge, and Safari */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #555;  /* Track color */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #61dafb; /* Thumb color */
+    border-radius: 4px;
+    border: 2px solid #555; /* Creates padding around the thumb */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #409ecf; /* Thumb color on hover */
+}
+
+
+.sidebar nav ul li {
+    display: block; /* Make each <li> block-level */
+    margin-bottom: 5px; /* Optional: add some space between items */
+}
+
+
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.page-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #20232a;
+    color: white;
+}
+
+
+.welcome {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-around; /* Ensures space between sections */
+    
+}
+
+
+.info-wrapper a {
+    display: inline-block;
+    background-color: #61dafb;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.info-wrapper a:hover {
+    background-color: #409ecf;
+    color: #f0f0f0;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 30%; /* Ensures each section takes up 30% of the info-wrapper width */
+}
