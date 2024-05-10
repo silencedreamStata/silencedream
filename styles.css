@@ -92,10 +92,16 @@ nav ul li.dropdown:hover .dropbtn {
     color: white;
     height: calc(100vh - 80px);
     overflow-y: auto;
-    /* Custom scrollbar styles */
+    overflow-x: hidden;;
     scrollbar-width: thin;
-    scrollbar-color: #61dafb #555;  /* thumb and track */
-}
+    scroll-behavior: smooth;
+} 
+
+
+
+
+
+
 
 /* WebKit browsers like Chrome, Edge, and Safari */
 .sidebar::-webkit-scrollbar {
